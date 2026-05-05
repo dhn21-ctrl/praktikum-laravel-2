@@ -25,3 +25,14 @@ route::get('/mahasiswa', [MahasiswaController::class,'index']);
 Route::get('/mahasiswa/edit/{id}', [MahasiswaController::class, 'edit']);
 Route::post('/mahasiswa/update/{id}', [MahasiswaController::class, 'update']);
 Route::get('/mahasiswa/delete/{id}', [MahasiswaController::class, 'destroy']);
+
+
+use App\Http\Controllers\BukuController;
+
+Route::get('/buku', [BukuController::class, 'index']);
+Route::get('/buku/create', [BukuController::class, 'create']);
+Route::post('/buku/store', [BukuController::class, 'store']);
+Route::get('/buku/edit/{id}', [BukuController::class, 'edit']);
+Route::post('/buku/update/{id}', [BukuController::class, 'update']);
+Route::get('/buku/delete/{id}', [BukuController::class, 'destroy']);
+

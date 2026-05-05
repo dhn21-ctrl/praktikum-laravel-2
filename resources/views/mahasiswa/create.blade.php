@@ -6,4 +6,6 @@
     NIM: <input type="text" name="nim"><br><br>
     Jurusan: <input type="text" name="jurusan"><br><br>
     <button type="submit">Simpan</button>
+    <button type="button" onclick="window.location='/mahasiswa'">Batal</button>
 </form>
+
