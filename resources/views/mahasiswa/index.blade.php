@@ -22,6 +22,16 @@
             </tr>
 
         @endforeach
+
+        <td>
+        <a href="/mahasiswa/edit/{{ $m->id }}">Edit</a>
+        </td>
+
+        <td>
+            <a href="/mahasiswa/edit/{{ $m->id }}">Edit</a>
+            <a href="/mahasiswa/delete/{{ $m->id }}">Hapus</a>
+        </td>
     </table>
+        
 </body>
 </html>
