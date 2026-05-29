@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Produkcontroller;
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\AnggotaController;
+
 
 
 Route::get('/mahasiswa/create', [MahasiswaController::class, 'create']);
@@ -36,3 +38,4 @@ Route::get('/buku/edit/{id}', [BukuController::class, 'edit']);
 Route::post('/buku/update/{id}', [BukuController::class, 'update']);
 Route::get('/buku/delete/{id}', [BukuController::class, 'destroy']);
 
+Route::resource('anggota', AnggotaController::class);

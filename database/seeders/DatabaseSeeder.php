@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Anggota;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -18,5 +19,12 @@ class DatabaseSeeder extends Seeder
         $this->call([
             MahasiswaSeeder::class,
         ]);
+
+        // Seeder Factory Anggota + Kartu Anggota
+        Anggota::factory(10)
+            ->hasKartuAnggota([
+                'tanggal_aktivasi' => now(),
+            ])
+            ->create();
     }
 }
